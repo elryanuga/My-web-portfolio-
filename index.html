@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple Portfolio</title>
+</head>
+<body>
+    <link rel="stylesheet" href="assets/style.css">
+<nav aria-label="Primary navigation">
+  <ul>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#trainings">Trainings/Seminars</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Job Experience</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+</nav>
+<main>
+
+  <section id="profile" tabindex="0" aria-label="Profile section">
+    <h2>Profile</h2>
+    <div id="profile">
+      <img src="https://scontent.fceb3-1.fna.fbcdn.net/v/t1.15752-9/380619663_739123858028194_8840205118523731331_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHoz-9oAXksKgnrrlj79pMxrHFk_Uv4uL6scWT9S_i4vh1IhquNmPRx_-hrq2rcKNpwvtGCrFGYFCfH9Xtw5sqe&_nc_ohc=zyTHk0CiPOUQ7kNvwFnC_VO&_nc_oc=Adn1vG8PcC-1Nb6EbamimFzEkahvg2Z_OioK-QWVAt49V0U4VNq-rBjEkkKA4Y5Q9Ko&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fceb3-1.fna&oh=03_Q7cD2QGbvmE6czhD9KWRGW-2i8ofdR2sDj4qBQ2QOKVEOnjIfg&oe=684C1E0D" />
+      <div>
+        <h3>El Ryan B. Uga</h3>
+        <p>An individual who still do his best.</p>
+        <p><b>Location:</b> Banilad, Mandaue City</p>
+        <p><b>Email:</b> elryaaaan445@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" tabindex="0" aria-label="Education section">
+    <h2>Education</h2>
+    <div class="timeline-entry" tabindex="0">
+      <h3>College</h3>
+      <p><i>Center for Industrial Technology and Enterprise, 2023 - 2026</i></p>
+    </div>
+    <div class="timeline-entry" tabindex="0">
+      <h3>Senior Highschool</h3>
+      <p><i>Benedicto College, 2020 - 2021</i></p>
+    </div>
+  </section>
+
+  <section id="trainings" tabindex="0" aria-label="Trainings and seminars">
+    <h2>Trainings/Seminars</h2>
+    <div class="timeline-entry" tabindex="0">
+      <h3>Informatics</h3>
+      <p><i>2015</i></p>
+    </div>
+    <div class="timeline-entry" tabindex="0">
+      <h3>Robotics</h3>
+      <p><i>2019</i></p>
+  </section>
+
+  <section id="projects" tabindex="0" aria-label="Projects section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <article class="project-card" tabindex="0" role="button" aria-pressed="false" data-key="project1" aria-label="Project: Portfolio Website">
+        <h3>Portfolio Website</h3>
+        <p>Modern Portfolio that shows my informations.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience" tabindex="0" aria-label="Job experience section">
+    <h2>Job Experience</h2>
+    <div class="timeline-entry" tabindex="0">
+      <h3>Remotasks</h3>
+      <p><i>Bee Lss Modta Tasker, 2021-2022 </i></p>
+      <p>Light detecting and Ranging using google map across the world.</p>
+    </div>
+
+        <div class="timeline-entry" tabindex="0">
+      <h3>Axent Wood</h3>
+      <p><i>Caster and Quality Control, 2022-2023 </i></p>
+      <p>Seasonal employee in this company.</p>
+    </div>
+
+  </section>
+
+  <section id="contact" tabindex="0" aria-label="Contact us section">
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate aria-describedby="formStatus" aria-live="polite">
+      <label for="name">Name <span aria-hidden="true" style="color:#cc3300;">*</span></label>
+      <input type="text" id="name" name="name" aria-required="true" aria-describedby="nameError" />
+      <div id="nameError" class="error-message" aria-live="assertive"></div>
+
+      <label for="email">Email <span aria-hidden="true" style="color:#cc3300;">*</span></label>
+      <input type="email" id="email" name="email" aria-required="true" aria-describedby="emailError" />
+      <div id="emailError" class="error-message" aria-live="assertive"></div>
+
+      <label for="message">Message <span aria-hidden="true" style="color:#cc3300;">*</span></label>
+      <textarea id="message" name="message" rows="5" aria-required="true" aria-describedby="messageError"></textarea>
+      <div id="messageError" class="error-message" aria-live="assertive"></div>
+
+      <button type="submit">Send Message</button>
+      <div id="formStatus" style="margin-top:1rem; font-weight:bold;"></div>
+    </form>
+  </section>
+
+</main>
+
+<div id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+  <div id="modal" tabindex="-1">
+    <button id="modal-close" aria-label="Close modal">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+<footer>
+  &copy; El Ryan B. Uga's Portfolio
+</footer>
+</body>
+  <scrip src="assets/script.js"></scrip>
+</html>
